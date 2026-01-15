@@ -1,19 +1,43 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>LOKI - AUTOMOUS DRONES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neon-green': '#39FF14',
+            'vibrant-green': '#81FF8A',
+          }
+        }
+      }
+    }
+  </script>
+</head>
   <body>
-    <header class="flex bg-gray-900 text-white justify-between items-center px-32 py-4"> 
-      <h1 class="font-roboto text-2xl tracking-wider"> LOKI </h1>
+    <header class="flex bg-black justify-between items-center pt-8 px-32 py-8  "> 
+      <h1 class="inline-block text-neon-green tracking-wider text-2xl hover:scale-110 transition-transform duration-200 origin-center font-bold "> LOKI <span class="text-white">FORGE</span> </h1> 
 
-      <nav class="flex gap-x-5">
-        <a href="#" class="text-white"> Home </a>
-        <a href="#" class="text-white"> Contact </a>
-        <a href="#" class="text-white"> About </a>
+      <nav class="flex gap-x-8">
+        <a href="#" class="text-white hover:text-green-400 transition-all duration-400"> Home</a>
+        <a href="#" class="text-white hover:text-green-400 transition-all duration-400"> Product</a>
+        <a href="#" class="text-white hover:text-green-400 transition-all duration-400"> About</a>
       </nav>
     </header>
+
+    <section class="flex bg-black justify-between py-32 mt-0"> 
+
+      <div class="flex flex-col gap-y-6 max-w-2xl"> 
+          <h1 class="justify-between font-bold font-inter text-white text-6xl px-32">FULL <span class="tracking-wide text-6xl">AI-AUTONOMY</span> <br>FOR <span class="inline-block text-neon-green hover:scale-110 origin-left transition-transform duration-300 cursor-not-allowed">DRONES</span>
+      </h1>
+      
+      <p class="text-gray-200 font-mono track-wide2 px-32">Plug-and-play autonomy that adapts to your drone and use case. </p>
+         <button class="uppercase bg-neon-green hover:bg-vibrant-green text-black font-bold ml-36 mr-64 py-2 px-4 border-b-4 border-vibrant-green hover:border-vibrant-green rounded"> button </button>
+      </div>
+    </section>
   </body>
 </html>
